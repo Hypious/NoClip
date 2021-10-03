@@ -30,7 +30,7 @@ namespace NoClip
         static bool flying = false;
         static bool notclipping = false;
         static float kissingmonkeys = 10f;
-        private static void Postfix(GorillaLocomotion.Player __instance)
+        static void Postfix(GorillaLocomotion.Player __instance)
         {
             if (!PhotonNetwork.CurrentRoom.IsVisible || !PhotonNetwork.InRoom)
             {
